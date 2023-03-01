@@ -15,4 +15,6 @@
 class Movie < ApplicationRecord
   belongs_to :director
   has_many :characters
+
+  validates(:title, { :prescence =>true })
 end
